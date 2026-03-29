@@ -1,3 +1,9 @@
-<h1>Hello from Jenkins CI 🚀</h1>
-<p>This is my first CI project</p>
-<h2>Day 2 is done...Yeahhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh</h2>
+const http = require('http');
+
+const server = http.createServer((req, res) => {
+  res.end('Hello from Jenkins + Docker 🚀');
+});
+
+server.listen(3000, () => {
+  console.log('Server running on port 3000');
+});
